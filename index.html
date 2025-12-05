@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4 Solution</title>
+    <style>
+        /* ===== CSS ===== */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #output {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            min-height: 50px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #eee;
+            margin-top: 40px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Module 4 Assignment</h1>
+        <p>Пример HTML + CSS + JS в одном файле</p>
+    </header>
+
+    <main>
+        <p>Нажми кнопку, чтобы выполнить JavaScript код:</p>
+        <button id="runButton">Запустить код</button>
+
+        <div id="output">
+            Результат будет здесь
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by Your Name</p>
+    </footer>
+
+    <script>
+        // ===== JS =====
+        document.getElementById('runButton').addEventListener('click', function() {
+            // Пример простого JS кода
+            const outputDiv = document.getElementById('output');
+            const currentTime = new Date().toLocaleTimeString();
+            outputDiv.textContent = `Код выполнен! Текущее время: ${currentTime}`;
+        });
+
+        // Здесь ты можешь добавлять код из starter script.js
+    </script>
+</body>
+</html>
